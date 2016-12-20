@@ -12,8 +12,8 @@
     <BuildType Condition="Exists('..\..\script\src\ApiClientConfiguration.cs')">Internal</BuildType>
     <ApplicationVersion>2.2.0.0</ApplicationVersion>
     <OutputPath>..\..\build\$(Configuration)\</OutputPath>
-	<VsixType>v3</VsixType>
-	<IsProductComponent>true</IsProductComponent>
+    <VsixType>v3</VsixType>
+    <IsProductComponent>true</IsProductComponent>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -555,6 +555,10 @@
       <Private>False</Private>
       <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup;GetCopyToOutputDirectoryItems;DebugSymbolsProjectOutputGroup;</IncludeOutputGroupsInVSIX>
       <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup;</IncludeOutputGroupsInVSIXLocalOnly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\submodules\AutomationIDResource\GithubVSAutomationIDs\GithubVSAutomationIDs.csproj">
+      <Project>{665078f4-5875-431d-a2cc-421849b43328}</Project>
+      <Name>GithubVSAutomationIDs</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\submodules\externalpackages\StartPage\preview5\GitHub.StartPage.Preview5.csproj">
       <Project>{1bc94b6a-b021-4207-a70e-936ee272ad3e}</Project>
