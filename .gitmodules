@@ -19,3 +19,6 @@
 [submodule "submodules/externalpackages/StartPage"]
 	path = submodules/externalpackages/StartPage
 	url = https://github.com/editor-tools/StartPage.git
+[submodule "submodules/AutomationIDResource"]
+	path = submodules/AutomationIDResource
+	url = https://github.com/editor-tools/AutomationIDResource.git
